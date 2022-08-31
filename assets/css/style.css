@@ -1,0 +1,17 @@
+.events{
+ background-color: rgb(20, 246, 114);
+}
+
+.blue{
+    background-color: cornflowerblue;
+    color: azure;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blue a{
+    background-color: cornflowerblue;
+    color: azure;
+    font-weight: 600;
+    text-decoration:wavy;
+}
