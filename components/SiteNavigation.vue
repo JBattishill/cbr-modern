@@ -1,17 +1,40 @@
 <!-- this component can hold site navigation -->
 <!-- if we put it here we can avoid having to repeat the code -->
 <template>
-	<nav>
-  <NuxtLink to="/">
-      Home
-    </NuxtLink>
-    <NuxtLink to="/about">
-      About
-    </NuxtLink>
-		<NuxtLink to="/buildings">
-      Buildings
-    </NuxtLink>
-	</nav>
+  <div class="container-fluid">
+    <ul class="nav nav-tabs justify-content-end">
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/">
+            Home
+          </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/support">
+          Support
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/events">
+          Events
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/learn">
+          Learn
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/about">
+          About
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/buildings">
+          Canberra's Modern
+        </NuxtLink>
+    </li>
+    </ul>
+  </div>  
 </template>
 <script>
 
