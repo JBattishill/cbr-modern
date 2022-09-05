@@ -20,6 +20,7 @@
 			</li>
 		</ul>
 		<h3>this list is stored in components/EventsList.vue</h3>
+		
     </div>
 	</div>
 </template>
@@ -29,8 +30,11 @@
 </style>
 
 <script>
+
+const years: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032']);
+
+
 export default {
-	
 	// layout: 'home',
 	async fetch() {
 		this.events = await fetch('http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100').then((res) =>
