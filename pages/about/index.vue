@@ -1,12 +1,13 @@
 <template>
 	<div class="container">
 		<h2>All events</h2>
-		<h3>Filename: pages/events/index.vue</h3>
+		<h3>Filename: pages/about/index.vue</h3>
 
 		<SiteNavigation />
 
 
 		<div class="events">
+			<h1>This is the About page</h1>
 			<!-- The building list is over in the components folder -->
 			<!-- the code below loads the component here so we can use it again -->
 			<EventsList />
