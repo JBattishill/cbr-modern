@@ -31,8 +31,23 @@
       <li class="nav-item">
         <NuxtLink class="btn btn-outline-dark m-2" to="/buildings">
           Canberra's Modern
-        </NuxtLink>
+        </NuxtLink>    
     </li>
+    <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/links">
+          Links
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/partners">
+          Partners
+        </NuxtLink>
+      </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/videos">
+          Videos
+        </NuxtLink>
+      </li>
     </ul>
   </div>  
 </template>

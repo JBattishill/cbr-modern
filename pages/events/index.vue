@@ -7,6 +7,7 @@
 
 
 		<div class="events">
+			<h1>This is the Events page</h1>
 			<!-- The building list is over in the components folder -->
 			<!-- the code below loads the component here so we can use it again -->
 			<EventsList />

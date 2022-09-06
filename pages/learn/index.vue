@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<h2>All events</h2>
-		<h3>Filename: pages/support/index.vue</h3>
+		<h3>Filename: pages/learn/index.vue</h3>
 
 		<SiteNavigation />
 
