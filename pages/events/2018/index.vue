@@ -1,13 +1,13 @@
 <template>
 	<div class="container">
 		<h2>All events</h2>
-		<h3>Filename: pages/events/index.vue</h3>
+		<h3>Filename: pages/events/2018/index.vue</h3>
 
 		<SiteNavigation />
 
 
 		<div class="events">
-			<h1>This is the Events page</h1>
+			<h1>This is the 2018 events page</h1>
 			<EventsNav />
 
 			<!-- The building list is over in the components folder -->
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+// const years: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032']);
+
 
 // in this API call, we go get a specifci building, filtered by the ID in the URL
 // we access what is in the URL by using the params object

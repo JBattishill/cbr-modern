@@ -51,6 +51,7 @@
     </ul>
   </div>  
 </template>
-<script>
 
+<script>
+// Components JS Scripts would go here
 </script>

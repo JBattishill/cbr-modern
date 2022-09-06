@@ -3,8 +3,8 @@
     <div class="container.xxl events m-5">
 	<div class="">
 		<!-- these would show while the data loads or if an error -->
-		<p v-if="$fetchState.pending">Loading buildings...</p>
-		<p v-else-if="$fetchState.error">Error while fetching buildings</p>
+		<p v-if="$fetchState.pending">Loading events...</p>
+		<p v-else-if="$fetchState.error">Error while fetching events</p>
 
 		<ul v-else class="list-group">
 			<!-- this is a for loop, it just loops through the list of buildings returned from the API -->
@@ -16,7 +16,7 @@
 					{{  events.title.rendered  }}
 				</NuxtLink>
 				<!-- now show me the building year -->
-				: {{ events.date }}
+				: {{ events.acf.year }}
 			</li>
 		</ul>
 		<h3>this list is stored in components/EventsList.vue</h3>
@@ -30,9 +30,7 @@
 </style>
 
 <script>
-
-// const years: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032']);
-
+// Components JS Scripts would go here
 
 export default {
 	// layout: 'home',

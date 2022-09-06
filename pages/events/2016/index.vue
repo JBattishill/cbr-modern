@@ -1,13 +1,13 @@
 <template>
 	<div class="container">
 		<h2>All events</h2>
-		<h3>Filename: pages/events/index.vue</h3>
+		<h3>Filename: pages/events/2016/index.vue</h3>
 
 		<SiteNavigation />
 
 
 		<div class="events">
-			<h1>This is the Events page</h1>
+			<h1>This is the 2016 events page</h1>
 			<EventsNav />
 
 			<!-- The building list is over in the components folder -->
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-
 // in this API call, we go get a specifci building, filtered by the ID in the URL
 // we access what is in the URL by using the params object
 export default {
