@@ -1,8 +1,9 @@
 <template>
-	<div class="container">
+	<div class="wrapper">
+		<SiteNavigation />
 		<h2>Home</h2>
 		<h3>Filename: pages/index.vue</h3>
-		<SiteNavigation />
+	
 
 	</div>
 </template>

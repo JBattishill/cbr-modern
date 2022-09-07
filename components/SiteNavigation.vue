@@ -2,7 +2,7 @@
 <!-- if we put it here we can avoid having to repeat the code -->
 <template>
   <div class="container-fluid">
-    <ul class="nav nav-tabs justify-content-end">
+    <ul class="siteNav nav nav-tabs justify-content-end">
       <li class="nav-item">
         <NuxtLink class="btn btn-outline-dark m-2" to="/">
             Home

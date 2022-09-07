@@ -22,7 +22,8 @@
   export default {
 	data() {
 	  return {
-		events: []
+		events: [],
+		year: ['2017']
 	  }
 	},
 	activated() {
@@ -32,9 +33,26 @@
 	},
   
 	async fetch() {
-	  this.events = await this.$http.$get('http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100')
-	}
-  }
+	//   this.events = await this.$http.$get('http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100')
+	// },
+
+	const events = await fetch(
+    `http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100/${this.$route.params.acf.year}`
+  ).then((res) => res.json())
+  
+  if (events.id && article.user.username === this.$route.params.username) {
+    this.events = events
+    this.$store.commit('2017', this.events)
+
+
+//    computed: {
+//     // a computed getter
+// 		eventCount2017() {
+// 		// `this` points to the component instance
+// 		return count.this.events.acf.year
+// 		}
+// 	}
+}}}
   </script>
   <style scoped>
   li {

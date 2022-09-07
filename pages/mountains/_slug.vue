@@ -1,13 +1,13 @@
 <template>
     <article>
-      <h1>{{ event.title }}</h1>
+      <h1>{{ mountain.title }}</h1>
       <p v-if="$fetchState.pending">
         <span class="loading"></span>
       </p>
-      <p v-else-if="$fetchState.error">Error while fetching events 🤬</p>
+      <p v-else-if="$fetchState.error">Error while fetching mountains 🤬</p>
       <section>
-        <img :src="event.image" :alt="event.title" />
-        <p>{{ event.content.rendered }}</p>
+        <img :src="mountain.image" :alt="mountain.title" />
+        <p>{{ mountain.description }}</p>
       </section>
       <button @click="goBack">Back</button>
     </article>
@@ -16,12 +16,12 @@
   export default {
     data() {
       return {
-        event: {}
+        mountain: {}
       }
     },
     async fetch() {
-      this.event = await this.$http.$get(
-        `http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100/${this.$route.params.slug}`
+      this.mountain = await this.$http.$get(
+        `https://api.nuxtjs.dev/mountains/${this.$route.params.slug}`
       )
     },
     methods: {

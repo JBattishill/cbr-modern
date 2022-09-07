@@ -1,5 +1,10 @@
 .events{
- background-color: rgb(20, 246, 114);
+ background-color: rgb(255, 215, 250);
+}
+
+.eventsWrapper{
+    padding: 4vw;
+    background-color: rgb(175, 30, 129);
 }
 
 .blue{
@@ -14,4 +19,12 @@
     color: azure;
     font-weight: 600;
     text-decoration:wavy;
+}
+.wrapper{
+    margin: 5vh auto;
+    max-width: 95%;
+}
+
+.siteNav{
+    padding: 2vh 0;
 }
