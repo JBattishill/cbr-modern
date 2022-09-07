@@ -8,7 +8,7 @@
 
 		<ul v-else class="list-group">
 			<!-- this is a for loop, it just loops through the list of buildings returned from the API -->
-			<li v-for="yearArr in $root.yearArr" v-bind:key="this.$root.yearArr.id" class="list-group-item blue">
+			<li v-for="yearArr in $data.info" v-bind:key="$data.info.yearArr.id" class="list-group-item blue">
 				<!-- now make a link for each item -->
 				<!-- <NuxtLink :to="events.slug"> -->
 				<NuxtLink :to="'/events/' + yearArr.slug">
@@ -32,9 +32,9 @@
 export default {
 	// layout: 'home',
 	data: () => ({
-    posts: []
+    info: []
   }),
-  
+
 	async fetch() {
 		const events = await fetch(
 			`http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100`
@@ -61,7 +61,6 @@ export default {
 			}
 			// console printing new array
 		// console.log(yearArr);
-		data.info.push(yearArr)
 		return { yearArr }
 		
 	},
@@ -79,9 +78,6 @@ export default {
 // 		}
 // 	},
 // }
-
-
-
 // export default {
 // 	async asyncData({ params }) {
 // 		const events = await fetch(
@@ -112,4 +108,4 @@ export default {
 // 		return { yearArr }
 // 	},
 // }
-// </script>  -->
+// </script>

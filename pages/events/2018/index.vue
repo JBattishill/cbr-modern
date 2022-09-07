@@ -1,42 +1,66 @@
 <template>
 	<div class="container">
 		<h2>All events</h2>
-		<h3>Filename: pages/events/2018/index.vue</h3>
+		<h3>Filename: pages/events/2017/index.vue</h3>
 
 		<SiteNavigation />
 
+		<ul class="list-group">
+			<!-- this is a for loop, it just loops through the list of buildings returned from the API -->
+			<li v-for="building in buildings" :key="building.id" class="list-group-item">
+				<!-- now make a link for each item -->
+				<!-- <NuxtLink :to="building.slug"> -->
+				<NuxtLink :to="'/buildings/' + building.slug">
+					<!-- return the rendered title -->
+					{{  building.title.rendered  }}
+				</NuxtLink>
+				<!-- now show me the building year -->
+				: {{ building.acf.year }}
+			</li>
+		</ul>
 
-		<div class="events">
+		<h3>this list is stored in components/BuildingsList.vue</h3>
+		<!-- <div class="events">
 			<h1>This is the 2018 events page</h1>
 			<EventsNav />
-
-			<!-- The building list is over in the components folder -->
-			<!-- the code below loads the component here so we can use it again -->
-			<EventsList />
-
-			<!-- this is a really useful line of code that will just output what the API call returns -->
-			<!-- <pre>{{ $data }}</pre> -->
-		</div>
+			
+		</div> -->
 	</div>
 </template>
 
 <script>
-// const years: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032']);
 
-
-// in this API call, we go get a specifci building, filtered by the ID in the URL
+// in this API call, we go get a specific building, filtered by the ID in the URL
 // we access what is in the URL by using the params object
+
 export default {
 	async asyncData({ params }) {
 		const events = await fetch(
 			`http://cm.beneb.com/wp-json/wp/v2/events/?per_page=100`
 		).then((res) => {
 			if (res.ok) {
+		// console.log(res)
 				return res.json()
 			}
 			throw new Error(res.status)
 		})
-		return { events }
+		// Filtering data to show only 2018 events
+		// create empty araay
+		let yearArr = [];
+		//loop through buildings/events array
+			for (let i = 0; i < events.length; i++) {
+				// some variables
+				let year = "2018";
+				let eventYear = events[i].acf.year;
+				// for each one, check the year
+					if (eventYear == year) {
+						//if there's a match, push into new array
+							yearArr.push(events[i]);
+					}
+			}
+			// console printing new array
+		console.log(yearArr);
+		return { yearArr }
 	},
 }
 </script>

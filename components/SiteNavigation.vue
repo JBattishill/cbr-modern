@@ -8,9 +8,14 @@
             Home
           </NuxtLink>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <NuxtLink class="btn btn-outline-dark m-2" to="/support">
           Support
+        </NuxtLink>
+      </li> -->
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/about">
+          About
         </NuxtLink>
       </li>
       <li class="nav-item">
@@ -18,22 +23,12 @@
           Events
         </NuxtLink>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <NuxtLink class="btn btn-outline-dark m-2" to="/learn">
           Learn
         </NuxtLink>
-      </li>
+      </li> -->
       <li class="nav-item">
-        <NuxtLink class="btn btn-outline-dark m-2" to="/about">
-          About
-        </NuxtLink>
-      </li>
-      <li class="nav-item">
-        <NuxtLink class="btn btn-outline-dark m-2" to="/buildings">
-          Canberra's Modern
-        </NuxtLink>    
-    </li>
-    <li class="nav-item">
         <NuxtLink class="btn btn-outline-dark m-2" to="/links">
           Links
         </NuxtLink>
@@ -43,6 +38,11 @@
           Partners
         </NuxtLink>
       </li>
+      <li class="nav-item">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/buildings">
+          Canberra's Modern
+        </NuxtLink>    
+    </li>
       <li class="nav-item">
         <NuxtLink class="btn btn-outline-dark m-2" to="/videos">
           Videos
