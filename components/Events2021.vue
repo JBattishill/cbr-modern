@@ -24,20 +24,6 @@
 
 
 <script>
-//original - works
-// export default {
-// 	// layout: 'home',
-// 	async fetch() {
-// 		this.buildings = await fetch('http://cm.beneb.com/wp-json/wp/v2/buildings/?per_page=20').then((res) =>
-// 			res.json()
-// 		)
-// 	},
-// 	data() {
-// 		return {
-// 			buildings: [],
-// 		}
-// 	},
-// }
 export default {
 	//data will return an array
 	data() {
@@ -59,7 +45,7 @@ export default {
 		//loop through buildings/events array
 		for (let i = 0; i < apiData.length; i++) {
 			// some variables
-			let year = "2017";
+			let year = "2021";
 			let eventYear = apiData[i].acf.year;
 			// for each one, check the year
 				if (eventYear == year) {

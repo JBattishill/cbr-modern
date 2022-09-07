@@ -59,7 +59,7 @@ export default {
 		//loop through buildings/events array
 		for (let i = 0; i < apiData.length; i++) {
 			// some variables
-			let year = "2017";
+			let year = "2019";
 			let eventYear = apiData[i].acf.year;
 			// for each one, check the year
 				if (eventYear == year) {

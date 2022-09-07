@@ -3,7 +3,6 @@
 	<SiteNavigation />
 		<div class="container">
 		<EventsNav />
-			<h2>Data fetched using fetch hook after Yarn Adding '@nuxt/http' </h2>
 			<h3>Attempting to only fetch events from 2017 </h3>
 			<p>Fetching is at components/Events2017.vue</p>
 			<Events2017 />
@@ -11,6 +10,6 @@
 	</div>
   </template>
   
-  <style>
+ <style>
   @import url('~assets/css/style.css');
 </style>
