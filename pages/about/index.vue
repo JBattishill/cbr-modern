@@ -1,9 +1,11 @@
 <template>
-	<div>
-	  <img src="~/assets/logo.svg" />
-	  <h1>Data fetched using fetch hook</h1>
-	  <p>Fetching is at component level</p>
-	  <Mountains />
+	<div class="main">
+		<!-- Component for Navigation -->
+		<SiteNavigation />
+		<!-- Component for Page Data -->
+			<pre class ="container">
+				<AboutData />
+			</pre>
 	</div>
-  </template>
-  
+</template>
+<!-- all formatting and Javascript is in the components -->

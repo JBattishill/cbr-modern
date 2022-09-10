@@ -19,10 +19,8 @@
 			</li>
 		</ul>
 		<h3>this list is stored in components/BuildingsList.vue</h3>
-
 	</div>
 </template>
-
 
 <script>
 export default {
