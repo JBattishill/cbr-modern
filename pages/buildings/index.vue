@@ -1,18 +1,9 @@
 <template>
-	<div class="container">
-		<h2>All buildings</h2>
-		<h3>Filename: pages/buildings/index.vue</h3>
-
+	<div class="">
+		<!-- Component for Navigation -->
 		<SiteNavigation />
-
-
-		<div class="building">
-			<!-- The building list is over in the components folder -->
-			<!-- the code below loads the component here so we can use it again -->
+		<div class="content">
 			<BuildingsList />
-
-			<!-- this is a really useful line of code that will just output what the API call returns -->
-			<!-- <pre>{{ $data }}</pre> -->
 		</div>
 	</div>
 </template>

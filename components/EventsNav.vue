@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <ul class="nav nav-tabs justify-content-end">
       <li class="nav-item">
-        <NuxtLink class="btn btn-outline-dark m-2" to="/events/2022">
+        <NuxtLink class="btn btn-outline-dark m-2" to="/events">
           2022
         </NuxtLink>
       </li>

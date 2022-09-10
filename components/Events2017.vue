@@ -22,22 +22,7 @@
 	</div>
 </template>
 
-
 <script>
-//original - works
-// export default {
-// 	// layout: 'home',
-// 	async fetch() {
-// 		this.buildings = await fetch('http://cm.beneb.com/wp-json/wp/v2/buildings/?per_page=20').then((res) =>
-// 			res.json()
-// 		)
-// 	},
-// 	data() {
-// 		return {
-// 			buildings: [],
-// 		}
-// 	},
-// }
 export default {
 	//data will return an array
 	data() {
@@ -53,7 +38,6 @@ export default {
 		.then((response) =>
 			response.json()
 		)
-		console.log(apiData)
 		// // create empty araay
 		let yearArr = [];
 		//loop through buildings/events array
@@ -67,11 +51,8 @@ export default {
 						yearArr.push(apiData[i]);
 				}
 		} 
-		console.log(yearArr);
 		//now set buildings to be the yearArray 
 		this.events = yearArr;
 	},
-	
-	
 }
 </script>

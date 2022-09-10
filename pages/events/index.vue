@@ -1,15 +1,18 @@
 <template>
-	<div class="wrapper">
-	<SiteNavigation />
-		<div class="container">
-			<h3>Attempting to only fetch all events and filter using EventsNav </h3>
-			<EventsNav /> 
-			<!-- <h3>Attempting to only fetch events from 2022 </h3> -->
-			<!-- <EventsCurrent /> -->
+	<div class="">
+		<!-- Component for Site Navigation -->
+		<SiteNavigation />
+
+		<!-- Content Wrapper for page content-->
+		<div class="content">
+		<!--Events Nav is a mini NavBar component for seeing previous years events  -->
+		<EventsNav />
+		<!--EventsCurrent is a component that holds the data just for the current year's events  -->
+		<EventsCurrent />
 		</div>
 	</div>
-  </template>
-  
+</template>
+
  <style>
   @import url('~assets/css/style.css');
 </style>

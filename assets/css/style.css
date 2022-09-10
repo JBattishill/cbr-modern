@@ -7,11 +7,21 @@
     background-color: rgb(175, 30, 129);
 }
 
-.wrapper{
+.content{
     margin: 5vh auto;
-    max-width: 90%;
+    max-width: 90vw;
+    background-color: aquamarine;
 }
 
+.cmlogo{
+    text-decoration: none;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 600;
+    color: black;
+    margin: auto;
+    padding-left: 1vw;
+    font-size: larger;
+}
 .pageData{
     max-width: 80vw;
     scroll-behavior: smooth;
@@ -21,7 +31,15 @@
 pre{
     white-space: pre-wrap;
 }
+.headWrapper{
+    max-width: 90vw;
+    margin: 0 auto;
+}
 
+.navWrapper{
+    max-width: 50vw;
+    margin: auto;
+}
 .siteNav{
     padding: 2vh 0;
 }

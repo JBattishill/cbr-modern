@@ -30,7 +30,7 @@ export default {
 		return {
 			//empty array to be filled
 			events: [],
-			store: "2021",
+			currentYear: new Date().getFullYear(),
 		}
 	},
 	//now go get the data
@@ -46,7 +46,7 @@ export default {
 		//loop through buildings/events array
 		for (let i = 0; i < apiData.length; i++) {
 			// some variables
-			let year = this.store;
+			let year = this.currentYear;
 			let eventYear = apiData[i].acf.year;
 			// for each one, check the year
 				if (eventYear == year) {
@@ -58,7 +58,5 @@ export default {
 		//now set buildings to be the yearArray 
 		this.events = yearArr;
 	},
-	
-	
 }
 </script>

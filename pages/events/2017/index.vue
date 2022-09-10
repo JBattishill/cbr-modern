@@ -1,15 +1,19 @@
 <template>
-	<div class="wrapper">
-	<SiteNavigation />
-		<div class="container">
+	<div class="">
+		<!-- Component for Site Navigation -->
+		<SiteNavigation />
+
+		<!-- Content Wrapper for page content-->
+		<div class="content">
+		<!--Events Nav is a mini NavBar component for seeing previous years events  -->
 		<EventsNav />
-			<h3>Attempting to only fetch events from 2017 </h3>
-			<p>Fetching is at components/Events2017.vue</p>
-			<Events2017 />
+		<!--Events2017 is a component that holds the data just for the 2018 events  -->
+		<Events2017 />
 		</div>
+
 	</div>
-  </template>
-  
+</template>
+
  <style>
   @import url('~assets/css/style.css');
 </style>
