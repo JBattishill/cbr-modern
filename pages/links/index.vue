@@ -1,11 +1,12 @@
 <template>
-	<div class="main">
+	<div class="">
 		<!-- Component for Navigation -->
 		<SiteNavigation />
-		<!-- Component for Page Data -->
+		<div class="content">
 			<pre class ="container">
 				<LinksData />
 			</pre>
 	</div>
+</div>
 </template>
 <!-- all formatting and Javascript is in the components -->
