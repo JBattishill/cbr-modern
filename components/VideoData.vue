@@ -29,7 +29,7 @@ async fetch() {
 			
 		//stripping page data of html tags
 		let strippedString = apiData.content.rendered.replace(/(<([^>]+)>)/gi, "");
-		let apostropheString = strippedString.replace('&#8217;', " i");
+		let apostropheString = strippedString.replace('&#8217;', "'");
 		let spaceString = apostropheString.replace('&nbsp;', " ")
 		let deadSpaceString = spaceString.replace('&#8211;',"")
 		

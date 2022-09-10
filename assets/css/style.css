@@ -7,22 +7,19 @@
     background-color: rgb(175, 30, 129);
 }
 
-.blue{
-    background-color: cornflowerblue;
-    color: azure;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.blue a{
-    background-color: cornflowerblue;
-    color: azure;
-    font-weight: 600;
-    text-decoration:wavy;
-}
 .wrapper{
     margin: 5vh auto;
-    max-width: 95%;
+    max-width: 90%;
+}
+
+.pageData{
+    max-width: 80vw;
+    scroll-behavior: smooth;
+    overflow-wrap: normal;  
+}
+
+pre{
+    white-space: pre-wrap;
 }
 
 .siteNav{
@@ -43,3 +40,4 @@
       -webkit-transform: rotate(360deg);
     }
   }
+  /* Create media for screen size under 750 to reduce width of nav items */
