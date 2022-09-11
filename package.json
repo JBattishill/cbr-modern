@@ -25,6 +25,8 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@vueuse/core": "^9.2.0",
+    "@vueuse/nuxt": "^9.2.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1"
   }

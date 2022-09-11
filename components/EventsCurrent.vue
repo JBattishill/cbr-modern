@@ -40,7 +40,6 @@ export default {
 		.then((response) =>
 			response.json()
 		)
-		console.log(apiData)
 		// // create empty araay
 		let yearArr = [];
 		//loop through buildings/events array
@@ -54,7 +53,6 @@ export default {
 						yearArr.push(apiData[i]);
 				}
 		} 
-		console.log(yearArr);
 		//now set buildings to be the yearArray 
 		this.events = yearArr;
 	},
