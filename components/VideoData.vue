@@ -35,7 +35,7 @@ async fetch() {
 
 
 
-		XML PARSER - https://jsonformatter.org/xml-parser
+		// xXML PARSER - https://jsonformatter.org/xml-parser
 
 
 
