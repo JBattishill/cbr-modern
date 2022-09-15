@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Canberra Modern',
+    title: 'cbr-modern',
     htmlAttrs: {
       lang: 'en',
     },
@@ -35,7 +35,6 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxt/http',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

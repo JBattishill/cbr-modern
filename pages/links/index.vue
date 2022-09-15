@@ -1,6 +1,6 @@
 
 <template>
-	<div class="page">
+	<div class="container">
 		<SiteNavigation />
 		<h2>{{ $route.params.slug }}</h2>
 		<div class="about">

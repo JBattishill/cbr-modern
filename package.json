@@ -12,7 +12,6 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
-    "@nuxt/http": "nuxt/http",
     "@nuxtjs/axios": "^5.13.6",
     "bootstrap": "^4.6.1",
     "bootstrap-vue": "^2.21.2",
@@ -20,13 +19,12 @@
     "node-sass": "^7.0.1",
     "nuxt": "^2.15.8",
     "sass-loader": "^13.0.2",
+    "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@vueuse/core": "^9.2.0",
-    "@vueuse/nuxt": "^9.2.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1"
   }
