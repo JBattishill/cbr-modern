@@ -1,8 +1,7 @@
 <template>
-	<div class="">
+	<div class="container">
 		<!-- Component for Site Navigation -->
 		<SiteNavigation />
-
 		<!-- Content Wrapper for page content-->
 		<div class="content">
 		<!--Events Nav is a mini NavBar component for seeing previous years events  -->
@@ -12,7 +11,3 @@
 		</div>
 	</div>
 </template>
-
- <style>
-  @import url('~assets/css/style.css');
-</style>

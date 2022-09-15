@@ -1,17 +1,15 @@
 
 <template>
-	<div class="page">
+	<div class="container">
 		<SiteNavigation />
-		<h2>{{ $route.params.slug }}</h2>
-		<div class="about">
+		<div class="content about">
 			<!-- the data returns an array with one item in it, so need to reference it below -->
 			<h2>{{  page[0].title.rendered  }}</h2>
 
 			<!-- create a div to hold the renderedContent variable holding the data we've retrieved below -->
 			<!-- if we don't use the v-html tag it will render it as a string -->
+			<!-- class of clip-animation used to target images for animation -->
 			<div class="clip-animation" v-html="renderedContent"></div>
-
-			<!-- <pre>{{ $data }}</pre> -->
 		</div>
 	</div>
 </template>
@@ -32,11 +30,9 @@ export default {
 		})
 		//now we've got the data, lets create a new variable to hold just the rendered content
 		let renderedContent = page[0].content.rendered;
-		//return the renderedContent
-		return {renderedContent, page}
 		
 		//return all page data
-		
+		return {renderedContent, page}	
 	},
 }
 </script>

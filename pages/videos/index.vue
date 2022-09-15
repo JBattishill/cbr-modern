@@ -1,5 +1,5 @@
 <template>
-	<div class="">
+	<div class="container">
 		<SiteNavigation />
 		<h2>{{ $route.params.slug }}</h2>
 		<div class="content videos">
@@ -30,11 +30,9 @@ export default {
 		})
 		//now we've got the data, lets create a new variable to hold just the rendered content
 		let renderedContent = page[0].content.rendered;
-		//return the renderedContent
-		return {renderedContent, page}
 		
 		//return all page data
-		
+		return {renderedContent, page}	
 	},
 }
 </script>

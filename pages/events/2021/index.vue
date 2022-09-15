@@ -1,5 +1,5 @@
 <template>
-	<div class="">
+	<div class="container">
 		<!-- Component for Site Navigation -->
 		<SiteNavigation />
 
@@ -13,7 +13,3 @@
 
 	</div>
 </template>
-
- <style>
-  @import url('~assets/css/style.css');
-</style>

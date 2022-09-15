@@ -17,11 +17,6 @@
                 Home
               </NuxtLink>
           </li>
-          <!-- <li class="nav-item">
-            <NuxtLink class="btn btn-outline-dark m-2" to="/support">
-              Support
-            </NuxtLink>
-          </li> -->
           <li class="nav-item">
             <NuxtLink class="btn btn-outline-dark m-2" to="/about">
               About
@@ -57,6 +52,5 @@
     </nav>
 </template>
 <style scoped>
-  @import url('~assets/css/style.css');
   @import url('http://fonts.cdnfonts.com/css/futura-std-4');
 </style>

@@ -22,6 +22,39 @@ $ yarn generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
+## Reflection
+
+I chose to keep my site as basic and functional as possible to allow myself time to work on understanding APIs and making the website as dynamic as possible.
+
+I was not able to get the website hosted using the the examples provided however I am determined to have this resolved in time for the next assignment.
+
+## Goals
+
+• A simple, clean website that's easy to navigate and understand
+• Dynamic, pulling data from API to display page data and images etc.
+• Responsive and still functional on smaller devices
+
+## Inspiration
+
+I honestly didn't take much inspiration from anywhere except the template and code provided by Ben :)
+
+I used the template in conjuction with animation examples from CSS-Tricks. Everything else I wrote myself.
+
+## Production Process
+I started with focusing on splitting up the data from the events page, it was far too much on a single view. With Ben's help, I was able to get the view functional and displaying data correctly using NuxtJS's v-html function.
+
+### Lessons learned
+NuxtJS is very complex and difficult to pick up... but eventually things made sense and things started to come together.
+
+This was first project using Bootstrap, I don't think I really picked it up properly but that wasn't what I was really focused on for this project.
+
+Overall I am pretty happy with how it turned out and I am find myself thinking forward to the next assignment and conceptualising ideas. But i need to stop, I havent slept properly in like 4 days so I can relax this weekend...
+
+Thanks
+
+Jarryd Eastwood (formerly Battishill)
+u3092157
+
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.

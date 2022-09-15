@@ -1,8 +1,8 @@
 <!-- this component returns a list of all the buildings -->
 <template>
-	<div class="">
+	<div class="content">
 		<!-- these would show while the data loads or if an error -->
-		<p v-if="$fetchState.pending">Loading buildings...</p>
+		<p v-if="$fetchState.pending"><span class="loading"></span></p>
 		<p v-else-if="$fetchState.error">Error while fetching buildings</p>
 
 		<ul v-else class="list-group">

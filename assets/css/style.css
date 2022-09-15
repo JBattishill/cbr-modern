@@ -1,10 +1,18 @@
+.slugPage{
+    margin: 10vh auto;
+    max-width: 50vw;
+    width: 50vw;
+}
+
+.slugPage img{
+    max-width: 50vw;
+    margin: 5vh auto;
+}
 
 .content{
     margin: 5vh auto;
-    max-width: 90vw;
-    width: 90vw;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 0px 80px rgba(255, 255, 255, .7)
+    max-width: 80vw;
+    width: 80vw;
 }
 
 .cmlogo{
@@ -16,10 +24,22 @@
     padding-left: 1vw;
     font-size: larger;
 }
-.page{
+.index{
+    max-width: 50vw;
+    width: 50vw;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 10vh auto;
+    padding-left: 1vw;
+    font-size: larger;
+    align-items: center;
+    justify-items: center;
+}
+.container{
     margin: 5vh auto;
-    max-width: 90vw;
     width: 90vw;
+    max-width: 90vw;
     margin: 0 auto;
     scroll-behavior: smooth;
     overflow-wrap: normal;  
@@ -45,16 +65,21 @@
 
 .loading {
     display: inline-block;
-    width: 20vw;
-    height: 20vw;
-    border: 2vw solid rgba(#fcc58a);
-    border-radius: 50%;
-    border-top-color: #158876;
-    animation: spin 1s ease-in-out infinite;
+    border: 10vw solid rgba(#015440);
+    border-radius: 15%;
+    border-top-color: #ffb700;
+    animation: spin .5s ease-in-out infinite;
+    background-color: rgb(0, 255, 195);
+    width: 10vw;
+    height: 1vh;
+    margin: 10vh auto;
   }
   @keyframes spin {
-    to {
-      -webkit-transform: rotate(360deg);
+    0% {
+        clip-path: circle(1vw at center)
+        }
+     100% {
+        clip-path: circle(5vw at center)    
     }
   }
   /* Create media for screen size under 750 to reduce width of nav items */
@@ -64,19 +89,16 @@
 }
   
 .clip-animation img{ 
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation: clip 2s infinite alternate-reverse;
-
+    transition: ease-in;
+    animation: clip 7s infinite alternate-reverse;
+    animation-delay: 3s;
   }
   
   @keyframes clip {
     0% {
         clip-path: circle(5vw at center)
         }
-    50% {
-        clip-path: circle(10vw at center)
-        }
      100% {
-        clip-path: circle(13vw at center)    
+        clip-path: circle(11vw at center)    
     }
   }
