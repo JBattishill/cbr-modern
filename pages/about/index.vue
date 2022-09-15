@@ -9,7 +9,7 @@
 
 			<!-- create a div to hold the renderedContent variable holding the data we've retrieved below -->
 			<!-- if we don't use the v-html tag it will render it as a string -->
-			<div class="" v-html="renderedContent"></div>
+			<div class="clip-animation" v-html="renderedContent"></div>
 
 			<!-- <pre>{{ $data }}</pre> -->
 		</div>

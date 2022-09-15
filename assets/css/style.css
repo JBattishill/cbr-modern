@@ -27,7 +27,7 @@
 
 .about img{
     max-width: 25vw;
-    clip-path: circle(12vw at center);
+    /* clip-path: circle(11vw at center) */
 }
 
 .headWrapper{
@@ -58,3 +58,25 @@
     }
   }
   /* Create media for screen size under 750 to reduce width of nav items */
+
+.clip-animation img { 
+    clip-path: circle(11vw at center)
+}
+  
+.clip-animation img{ 
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: clip 2s infinite alternate-reverse;
+
+  }
+  
+  @keyframes clip {
+    0% {
+        clip-path: circle(5vw at center)
+        }
+    50% {
+        clip-path: circle(10vw at center)
+        }
+     100% {
+        clip-path: circle(13vw at center)    
+    }
+  }
